@@ -1,7 +1,6 @@
 pandas
 numpy
 scipy
-concurrent.futures
 tqdm
 matplotlib
 seaborn
