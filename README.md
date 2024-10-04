@@ -94,7 +94,7 @@ To run the Fake News Source Credibility Scoring project, follow these steps:
 1. Install Dependencies:
    Ensure you have installed all required libraries by running the following command in the project directory:
 
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
 
 2. Prepare the Dataset:
 
@@ -104,14 +104,14 @@ To run the Fake News Source Credibility Scoring project, follow these steps:
 3. Run the Jupyter Notebook:
    Open the Jupyter notebook provided in the repository (project.ipynb) to train and test the models. You can run it by executing:
 
-   jupyter notebook project.ipynb
+   `jupyter notebook project.ipynb`
 
    This will launch the notebook interface where you can interactively execute cells to see the project pipeline, from data preprocessing to model evaluation.
 
 4. Running the Python Script:
    If you prefer to run the project via a Python script (if provided), you can execute it by running:
 
-   python main.py
+   `python main.py`
 
 5. Review Results:
    After running the notebook or script, results such as model accuracy, precision, recall, and credibility scores will be displayed.
