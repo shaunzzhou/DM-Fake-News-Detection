@@ -126,7 +126,7 @@ To run the Fake News Source Credibility Scoring project, follow these steps:
 This project was developed by:
 
 - Shaun Zhou
-  [GitHub](https://github.com/your-profile)
+  [GitHub](https://github.com/shaunzzhou)
 - Darius Ng
   [GitHub](https://github.com/dariusnggg)
 - Gabriel Chua
