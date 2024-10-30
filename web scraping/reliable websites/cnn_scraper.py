@@ -23,7 +23,7 @@ for section_url in section_urls:
     for link in soup.find_all('a', href=True):
         url = link['href']
         # filter for article links by year and ensure full URL format
-        if '/2024/' in url or '/2023/' in url: # Limit to 2024 and 2023 articles
+        if ('/2024/' in url or '/2023/' in url) and 'politics' in url: # Limit to 2024 and 2023 articles
             full_url = f"https://edition.cnn.com{url}" if url.startswith('/') else url
             article_links.add(full_url)
 
