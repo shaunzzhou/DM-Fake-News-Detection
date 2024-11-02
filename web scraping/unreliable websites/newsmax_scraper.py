@@ -16,13 +16,6 @@ article_links = set()  # Using a set to avoid duplicates
 keywords = ["election", "2024 election", "vote", "voting", "poll", "ballot", "candidate",
             "presidential", "Republican", "Democrat", "Biden", "Trump", "Kamala Harris", "GOP", "presidential race", 
             "campaign", "debate", "nomination", "swing state", "voter turnout", "electoral college"]
-# headers = {
-#     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
-#     "Accept-Language": "en-US,en;q=0.9",
-#     "Accept-Encoding": "gzip, deflate, br",
-#     "Connection": "keep-alive"
-# }
-
 
 # Loop through each section and collect article URLs
 for section_url in section_urls:
@@ -47,8 +40,8 @@ for section_url in section_urls:
     
     print(f"Number of links found on {section_url}: {found_links}")
 
-# Limit to only 100 articles for consistency with other sources
-article_links = list(article_links)[:100]
+# Limit to at most 200 articles to avoid long runtimes
+article_links = list(article_links)[:200]
 print(f"Total unique article links collected: {len(article_links)}")
 
 # Storage for article content

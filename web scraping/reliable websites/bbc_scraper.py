@@ -39,8 +39,8 @@ print("Total articles found:", len(article_links))
 if not article_links:
     print("No articles found. Adjust your filters or check the section URL.")
 else:
-    # Limit to only 100 articles for consistency with other sources
-    article_links = list(article_links)[:100]
+    # Limit to at most 200 articles to avoid long runtimes
+    article_links = list(article_links)[:200]
 
     # Storage for article content
     articles = []

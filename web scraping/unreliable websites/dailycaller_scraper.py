@@ -13,6 +13,8 @@ section_urls = [
     "https://dailycaller.com/section/politics/page/4/",
     "https://dailycaller.com/section/politics/page/5/",
     "https://dailycaller.com/section/politics/page/6/",
+    "https://dailycaller.com/section/politics/page/7/",
+    "https://dailycaller.com/section/politics/page/8/",
 ]
 
 # Initialize list for all article links
@@ -32,8 +34,8 @@ for section_url in section_urls:
                 full_url = f"https://dailycaller.com/{url}" if url.startswith('/') else url
                 article_links.add(full_url)
 
-# Limit to only 100 articles for consistency with other sources
-article_links = list(article_links)[:100]
+# Limit to at most 200 articles to avoid long runtimes
+article_links = list(article_links)[:200]
 print(f"Number of unique article links collected: {len(article_links)}")
 
 # Storage for article content

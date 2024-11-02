@@ -9,7 +9,12 @@ import json
 section_urls = [
     "https://www.theguardian.com/us-news/us-politics/all",
     "https://www.theguardian.com/us-news/us-elections-2024",
-    "https://www.theguardian.com/us-news/us-congress"
+    "https://www.theguardian.com/us-news/us-congress",
+    "https://www.theguardian.com/us-news",
+    "https://www.theguardian.com/us-news/donaldtrump",
+    "https://www.theguardian.com/us-news/republicans",
+    "https://www.theguardian.com/us-news/kamala-harris",
+    "https://www.theguardian.com/us-news/democrats"
 ]
 
 # Initialize list for all article links
@@ -27,8 +32,8 @@ for section_url in section_urls:
             full_url = f"https://www.theguardian.com{url}" if url.startswith('/') else url
             article_links.add(full_url)
 
-# Limit to only 100 articles for consistency with other sources
-article_links = list(article_links)[:100]
+# Limit to at most 200 articles to avoid long runtimes
+article_links = list(article_links)[:200]
 
 # Storage for article content
 articles = []

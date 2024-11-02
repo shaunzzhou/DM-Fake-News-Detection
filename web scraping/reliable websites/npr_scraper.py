@@ -30,8 +30,8 @@ for section_url in section_urls:
             full_url = f"https://www.npr.org{url}" if url.startswith('/') else url
             article_links.add(full_url)
 
-# Limit to only 100 articles for consistency with other sources
-article_links = list(article_links)[:100]
+# Limit to at most 200 articles to avoid long runtimes
+article_links = list(article_links)[:200]
 print(f"Number of unique article links collected: {len(article_links)}")
 
 # Storage for article content
