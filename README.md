@@ -37,11 +37,11 @@ To set up the environment, follow these steps:
 
 1.  Clone the repository:
 
-        git clone https://github.com/your-repo/fake-news-detection.git
+        git clone https://github.com/shaunzzhou/DM-Fake-News-Detection.git
 
 2.  Navigate to the project directory:
 
-        cd fake-news-detection
+        cd DM-Fake-News-Detection
 
 3.  Create a virtual environment:
 
