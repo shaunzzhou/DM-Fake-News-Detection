@@ -83,6 +83,11 @@ The project uses a labelled dataset of real and fake news articles, which can be
 
 -   **Dataset link:** [Kaggle: Fake and Real News Dataset](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification)
 
+Brief Description of `csv` files:
+
+-   Original csv file is split into 3 csv files (`part1.csv`, `part2.csv`, `part3.csv`) so that each csv file is small enough to be pushed to GitHub.
+-   `processed_data.csv` contains all 3 csv parts combined and basic preprocessing has been done such as tokenization and stemming which can be found in `stemming.ipynb`, this csv file is subsequently used in the `model_experiments` folder.
+
 ## Data Collection
 
 This project uses news articles scraped from various sources, including reliable and unreliable websites. The structure of the dataset is as follows:
