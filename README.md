@@ -97,7 +97,7 @@ This project uses news articles scraped from various sources, including reliable
 ## Description of `ipynb` notebooks
 
 ── model_experiments<br>
-│ ├── `BERT.ipynb`<br>
+│ ├── `BERT.ipynb` <br>
 │ ├── `CNN.ipynb`<br>
 │ ├── `DistilBERT.ipynb`<br>
 │ ├── `LSTM.ipynb`<br>
@@ -105,13 +105,13 @@ This project uses news articles scraped from various sources, including reliable
 │ ├── `SimpleNN.ipynb`<br>
 │ ├── `SVM.ipynb`<br>
 ├── processing_experiments<br>
-│ ├── `booster_words.ipynb`<br>
-│ ├── `count_vectoriser.ipynb`<br>
-│ ├── `lemmatisation.ipynb`<br>
-│ ├── `stemming.ipynb`<br>
+│ ├── `booster_words.ipynb` Booster words with CountVectorizer to baseline models<br>
+│ ├── `count_vectoriser.ipynb` CountVectorizer to baseline models<br>
+│ ├── `lemmatisation.ipynb` Lemmatisation to baseline models<br>
+│ ├── `stemming.ipynb` Porter Stemmer to baseline models<br>
 ├── web_scraping<br>
-│ ├── `scraped_data_preprocessing.ipynb`<br>
-├── `EDA.ipynb`
+│ ├── `scraped_data_preprocessing.ipynb` Applied our best model (CNN) to scraped data<br>
+├── `EDA.ipynb` Initial EDA
 
 ---
 
