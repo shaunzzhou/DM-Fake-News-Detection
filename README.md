@@ -96,21 +96,21 @@ This project uses news articles scraped from various sources, including reliable
 
 ## Description of `ipynb` notebooks
 
-── model_experiments
-│ ├── `BERT.ipynb`
-│ ├── `CNN.ipynb`
-│ ├── `DistilBERT.ipynb`
-│ ├── `LSTM.ipynb`
-│ ├── `RNN.ipynb`
-│ ├── `SimpleNN.ipynb`
-│ ├── `SVM.ipynb`
-├── processing_experiments
-│ ├── `booster_words.ipynb`
-│ ├── `count_vectoriser.ipynb`
-│ ├── `lemmatisation.ipynb`
-│ ├── `stemming.ipynb`
-├── web_scraping
-│ ├── `scraped_data_preprocessing.ipynb`
+── model_experiments<br>
+│ ├── `BERT.ipynb`<br>
+│ ├── `CNN.ipynb`<br>
+│ ├── `DistilBERT.ipynb`<br>
+│ ├── `LSTM.ipynb`<br>
+│ ├── `RNN.ipynb`<br>
+│ ├── `SimpleNN.ipynb`<br>
+│ ├── `SVM.ipynb`<br>
+├── processing_experiments<br>
+│ ├── `booster_words.ipynb`<br>
+│ ├── `count_vectoriser.ipynb`<br>
+│ ├── `lemmatisation.ipynb`<br>
+│ ├── `stemming.ipynb`<br>
+├── web_scraping<br>
+│ ├── `scraped_data_preprocessing.ipynb`<br>
 ├── `EDA.ipynb`
 
 ---
