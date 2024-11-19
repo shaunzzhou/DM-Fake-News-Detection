@@ -20,7 +20,7 @@ This project focuses on assessing the credibility of news sources by analyzing t
 2. [Installation](#installation)
 3. [Dataset](#dataset)
 4. [Data Collection](#data-collection)
-5. [Description of ipynb Notebooks](#notebooks)
+5. [Description of Notebooks](#description-of-notebooks)
 6. [Contributors](#contributors)
 
 ---
@@ -94,7 +94,7 @@ This project uses news articles scraped from various sources, including reliable
 
 ---
 
-## Description of `ipynb` notebooks
+## Description of notebooks
 
 ── model_experiments<br>
 │ ├── `BERT.ipynb` <br>
