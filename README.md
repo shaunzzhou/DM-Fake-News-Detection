@@ -20,7 +20,7 @@ This project focuses on assessing the credibility of news sources by analyzing t
 2. [Installation](#installation)
 3. [Dataset](#dataset)
 4. [Data Collection](#data-collection)
-5. [How to Run the Project](#how-to-run-the-project)
+5. [Description of ipynb Notebooks](#notebooks)
 6. [Contributors](#contributors)
 
 ---
@@ -67,6 +67,13 @@ The requirements.txt file includes the following packages:
 -   nltk
 -   spacy
 -   wordcloud
+-   scikit-learn
+-   tensorflow
+-   torch
+-   transformers
+-   tokenizers
+-   keras
+-   gensim
 
 ---
 
@@ -87,37 +94,24 @@ This project uses news articles scraped from various sources, including reliable
 
 ---
 
-## How to Run the Project
+## Description of `ipynb` notebooks
 
-To run the Fake News Source Credibility Scoring project, follow these steps:
-
-1. Install Dependencies:
-   Ensure you have installed all required libraries by running the following command in the project directory:
-
-    `pip install -r requirements.txt`
-
-2. Prepare the Dataset:
-
-    - Download the dataset from [Kaggle: Fake and Real News Dataset](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset).
-    - Alternatively, you can scrape articles using the built-in scraping functionality (ensure you comply with the terms of use of the websites you're scraping).
-
-3. Run the Jupyter Notebook:
-   Open the Jupyter notebook provided in the repository (project.ipynb) to train and test the models. You can run it by executing:
-
-    `jupyter notebook project.ipynb`
-
-    This will launch the notebook interface where you can interactively execute cells to see the project pipeline, from data preprocessing to model evaluation.
-
-4. Running the Python Script:
-   If you prefer to run the project via a Python script (if provided), you can execute it by running:
-
-    `python main.py`
-
-5. Review Results:
-   After running the notebook or script, results such as model accuracy, precision, recall, and credibility scores will be displayed.
-
-6. Customizations:
-   You can modify the dataset, change the models, or adjust the hyperparameters directly in the Jupyter notebook to suit your needs.
+── model_experiments
+│ ├── `BERT.ipynb`
+│ ├── `CNN.ipynb`
+│ ├── `DistilBERT.ipynb`
+│ ├── `LSTM.ipynb`
+│ ├── `RNN.ipynb`
+│ ├── `SimpleNN.ipynb`
+│ ├── `SVM.ipynb`
+├── processing_experiments
+│ ├── `booster_words.ipynb`
+│ ├── `count_vectoriser.ipynb`
+│ ├── `lemmatisation.ipynb`
+│ ├── `stemming.ipynb`
+├── web_scraping
+│ ├── `scraped_data_preprocessing.ipynb`
+├── `EDA.ipynb`
 
 ---
 
@@ -141,77 +135,3 @@ This project was developed by:
     [GitHub](https://github.com/seejaee)
 
 ---
-
-ª .gitignore
-ª EDA.ipynb
-ª hierarchy.txt
-ª part1.csv
-ª part2.csv
-ª part3.csv
-ª processed_data.csv
-ª README.md
-ª requirements.txt
-ª  
-+---model_experiements
-ª BERT.ipynb
-ª CNN.ipynb
-ª DistilBERT.ipynb
-ª LSTM.ipynb
-ª LSTM_working.ipynb
-ª RNN.ipynb
-ª SimpleNN.ipynb
-ª SVM.ipynb
-ª  
-+---processing_experiments
-ª booster_words.ipynb
-ª count_vectoriser.ipynb
-ª lemmatisation.ipynb
-ª stemming.ipynb
-ª  
-+---web scraping
-ª scraped_articles.csv
-ª scraped_data_preprocessing_final.ipynb
-ª test_news_scraper.py
-ª trafilatura example.py
-ª trafilatura scraper.py
-ª trafilatura scraper_final.py
-ª  
- +---reliable websites
-ª ap_articles.csv
-ª ap_scraper.py
-ª bbc_articles.csv
-ª bbc_scraper.py
-ª cnn_articles.csv
-ª cnn_scraper.py
-ª guardian_articles.csv
-ª guardian_scraper.py
-ª npr_articles.csv
-ª npr_scraper.py
-ª  
- +---test_websites
-ª ap_articles_1.csv
-ª bbc_articles_1.csv
-ª breitbart_articles_1.csv
-ª cnn_articles_1.csv
-ª daily_caller_articles_1.csv
-ª guardian_articles_1.csv
-ª naturalnews_articles_1.csv
-ª newsmax_articles_1.csv
-ª npr_articles_1.csv
-ª zerohedge_articles_1.csv
-ª  
- +---unreliable websites
-ª breitbart_articles.csv
-ª breitbart_scraper.py
-ª dailycaller_articles.csv
-ª dailycaller_scraper.py
-ª naturalnews_articles.csv
-ª naturalnews_scraper.py
-ª newsmax_articles.csv
-ª newsmax_scraper.py
-ª nypost_scraper.py
-ª zerohedge_articles.csv
-ª zerohedge_scraper.py
-ª  
- +---**pycache**
-final_news_scraper.cpython-312.pyc

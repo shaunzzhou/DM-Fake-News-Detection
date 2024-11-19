@@ -9,3 +9,10 @@ langid
 nltk
 spacy
 wordcloud
+scikit-learn
+tensorflow
+torch
+transformers
+tokenizers
+keras
+gensim
